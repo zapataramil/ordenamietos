@@ -8,7 +8,9 @@
 #ifndef SRC_ORDENAMIENTOS_H_
 #define SRC_ORDENAMIENTOS_H_
 
+void burbujeo(int* vector, int tamanio);
 
+void burbujeoMejorado(int* vector, int tamanio);
 
 
 
