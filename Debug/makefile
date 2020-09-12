@@ -38,19 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: ordenamientoBurbujeo
+all: ordenamientos
 
 # Tool invocations
-ordenamientoBurbujeo: $(OBJS) $(USER_OBJS)
+ordenamientos: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++  -o "ordenamientoBurbujeo" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "ordenamientos" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) ordenamientoBurbujeo
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) ordenamientos
 	-@echo ' '
 
 .PHONY: all clean dependents
