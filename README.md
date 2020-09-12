@@ -10,5 +10,5 @@ Bubble sort improved
 
 Selection sort
 
-**The definition is in ordenamientos.cpp**
+**The definition is in src/ordenamientos.cpp**
 
